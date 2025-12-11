@@ -1,0 +1,183 @@
+/* СТИЛИ ДЛЯ КАРТОЧЕК УСЛУГ В СТИЛЕ 2000-Х */
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.service-card {
+  background: #fff;
+  border: 5px solid #000;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #000, inset 0 0 0 2px #ff0000;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.service-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #000, inset 0 0 0 3px #ff0000;
+  border-color: #ff0000;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ff0000;
+}
+
+.card-number {
+  background: #ff0000;
+  color: #fff;
+  font-family: "Impact", sans-serif;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.card-title {
+  font-family: "Impact", sans-serif;
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #ff0000;
+  margin: 0;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 20px;
+  min-height: 80px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 2px dashed #ff0000;
+}
+
+.card-footer i {
+  font-size: 24px;
+  color: #ff0000;
+}
+
+.card-phone {
+  font-family: "Impact", sans-serif;
+  font-size: 18px;
+  color: #000;
+  background: #ffd700;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.service-bonus {
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  border: 5px solid #ff0000;
+  box-shadow: 8px 8px 0 #ff0000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.service-bonus h3 {
+  font-family: "Impact", sans-serif;
+  font-size: 28px;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.service-bonus p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.bonus-phone {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  font-family: "Impact", sans-serif;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 3px solid #ffd700;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 5px 5px 0 #000;
+}
+
+.bonus-phone:hover {
+  background: #ffd700;
+  color: #000;
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 #000;
+}
+
+/* АДАПТИВНОСТЬ КАРТОЧЕК */
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto 40px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 12px;
+  }
+
+  .card-number {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .bonus-phone {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}

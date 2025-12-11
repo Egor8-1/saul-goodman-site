@@ -1,0 +1,316 @@
+/* АДАПТИВНЫЕ СТИЛИ */
+
+/* Большие планшеты и маленькие десктопы */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero__title {
+    font-size: 32px;
+  }
+
+  .hero__subtitle {
+    font-size: 24px;
+  }
+}
+
+/* Планшеты (ландшафт) */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header__inner {
+    padding: 0 15px;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .neon-sign {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero__image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .consultation__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* Планшеты (портрет) */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .neon-sign {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .burger {
+    order: 2;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Большие телефоны */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
+  }
+
+  .hero__number {
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+
+  .hero__button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+
+  .hero__description p {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonials-intro {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .consultation-form {
+    padding: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Средние телефоны */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .logo-img {
+    height: 35px;
+  }
+
+  .neon-sign {
+    font-size: 16px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__number {
+    font-size: 20px;
+  }
+
+  .hero__button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-menu {
+    width: 280px;
+    padding: 80px 20px 30px;
+  }
+
+  .mobile-link {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .mobile-phone {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 22px;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+  }
+
+  .hero__number {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .hero__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .hero__call {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .testimonials-intro {
+    font-size: 14px;
+  }
+
+  .consultation-form {
+    padding: 15px;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .footer-logo {
+    font-size: 22px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-phone,
+  .footer-email,
+  .footer-address {
+    font-size: 14px;
+  }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 360px) {
+  .logo-img {
+    height: 30px;
+  }
+
+  .neon-sign {
+    font-size: 14px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+  }
+
+  .hero__number {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .mobile-menu {
+    width: 250px;
+  }
+}

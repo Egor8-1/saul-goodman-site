@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Call Saul | Адвокат Сол Гудман</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/cards.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Impact&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ШАПКА -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <!-- Логотип -->
+          <div class="logo" id="logo">
+            <img
+              src="assets/images/logo.png"
+              alt="Better Call Saul"
+              class="logo-img"
+            />
+          </div>
+
+          <!-- Мигающая вывеска -->
+          <div class="neon-sign" id="neonSign">
+            <i class="fas fa-bolt"></i> BETTER CALL SAUL
+          </div>
+
+          <!-- Меню -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#hero" class="nav__link"
+                  ><i class="fas fa-home"></i> ГЛАВНАЯ</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="nav__link"
+                  ><i class="fas fa-gavel"></i> УСЛУГИ</a
+                >
+              </li>
+              <li>
+                <a href="#testimonials" class="nav__link"
+                  ><i class="fas fa-star"></i> ОТЗЫВЫ</a
+                >
+              </li>
+              <li>
+                <a href="#consultation" class="nav__link"
+                  ><i class="fas fa-phone"></i> КОНСУЛЬТАЦИЯ</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Бургер -->
+          <button class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Мобильное меню -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li>
+            <a href="#hero" class="mobile-link"
+              ><i class="fas fa-home"></i> ГЛАВНАЯ</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="mobile-link"
+              ><i class="fas fa-gavel"></i> УСЛУГИ</a
+            >
+          </li>
+          <li>
+            <a href="#testimonials" class="mobile-link"
+              ><i class="fas fa-star"></i> ОТЗЫВЫ</a
+            >
+          </li>
+          <li>
+            <a href="#consultation" class="mobile-link"
+              ><i class="fas fa-phone"></i> КОНСУЛЬТАЦИЯ</a
+            >
+          </li>
+          <li>
+            <a href="tel:5055034455" class="mobile-phone"
+              ><i class="fas fa-phone-alt"></i> (505) 503-4455</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="hero__title">
+              ДОБРО ПОЖАЛОВАТЬ,<br />НАРУШИТЕЛЬ ЗАКОНА!
+            </h1>
+            <p class="hero__subtitle">Better Call Saul!</p>
+
+            <div class="hero__description">
+              <p>
+                <i class="fas fa-quote-left"></i> Адвокат? Скорее, специалист по
+                «сложным ситуациям». Сол Гудман — практик, а не теоретик. Он не
+                пишет диссертаций.<i class="fas fa-quote-right"></i>
+              </p>
+              <p>
+                <i class="fas fa-quote-left"></i> Он пишет апелляции, протоколы
+                и иногда — сценарии вашего оправдания. Его стиль — напор, а не
+                пафос. Его цель — результат, а не процесс.<i
+                  class="fas fa-quote-right"
+                ></i>
+              </p>
+            </div>
+
+            <div class="hero__contact">
+              <a href="tel:5055034455" class="hero__number">
+                <i class="fas fa-phone"></i> 505-503-4455
+              </a>
+              <p class="hero__call">
+                Нужен результат? <strong>Better call Saul.</strong>
+              </p>
+            </div>
+
+            <a href="#services" class="hero__button">
+              <i class="fas fa-exclamation-triangle"></i> В ЧЕМ ВАША ПРОБЛЕМА?
+            </a>
+          </div>
+
+          <div class="hero__image">
+            <img
+              src="assets/images/saul-hero.png"
+              alt="Сол Гудман"
+              class="saul-photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-question-circle"></i> В ЧЕМ ВАША ПРОБЛЕМА?
+        </h2>
+
+        <div class="services__grid">
+          <!-- Карточка 1 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#1</div>
+              <h3 class="card-title">НАРКОТИКИ?</h3>
+            </div>
+            <p class="card-text">
+              Поймали со складом? Назовём это «научной коллекцией». Найду
+              эксперта, который согласится, или того, кто отменит экспертизу.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-pills"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#2</div>
+              <h3 class="card-title">КРАЖИ?</h3>
+            </div>
+            <p class="card-text">
+              Вы не крали. Вы «временно заимствовали». Или вас подставили. У
+              меня версий всегда больше, чем у обвинения.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-gem"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#3</div>
+              <h3 class="card-title">ДТП?</h3>
+            </div>
+            <p class="card-text">
+              Ваша вина — не приговор. Виновен тот, кто нарисовал разметку криво
+              или продал бракованные тормоза. Я найду третьего.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-car-crash"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+
+          <!-- Карточка 4 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#4</div>
+              <h3 class="card-title">СЕМЕЙНЫЕ ВОЙНЫ?</h3>
+            </div>
+            <p class="card-text">
+              Дележ детей, квартир и собаки. Я не миротворец — я стратег. Пока
+              вторая сторона ищет правды, я ищу счета и забытые долги.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-home"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+
+          <!-- Карточка 5 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#5</div>
+              <h3 class="card-title">УГРОЗЫ?</h3>
+            </div>
+            <p class="card-text">
+              Вас пугают? Отлично. Страх — плохой союзник. Я объясню
+              «энтузиастам», что угрожать человеку с адвокатом — дорогое
+              удовольствие.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-user-secret"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+
+          <!-- Карточка 6 -->
+          <div class="service-card">
+            <div class="card-header">
+              <div class="card-number">#6</div>
+              <h3 class="card-title">НАЛОГИ?</h3>
+            </div>
+            <p class="card-text">
+              Долги перед государством? Они просто ошиблись в расчётах. Я
+              посчитаю точнее. Найду потерянные расходы и просроченные сроки.
+            </p>
+            <div class="card-footer">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <span class="card-phone">505-503-4455</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-bonus">
+          <h3>
+            <i class="fas fa-lightbulb"></i> А ЕСЛИ ВАША ПРОБЛЕМА НЕ В СПИСКЕ?
+          </h3>
+          <p>
+            Значит, она особенная. Такие мне нравятся больше всего. Потому что
+            если её нет в правилах — значит, правила можно написать самому.
+          </p>
+          <a href="tel:5055034455" class="bonus-phone">
+            <i class="fas fa-phone"></i> Звоните. Обсудим ваш уникальный
+            беспорядок.
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title"><i class="fas fa-comment-alt"></i> ОТЗЫВЫ</h2>
+
+        <p class="testimonials-intro">
+          <i class="fas fa-info-circle"></i> Да, я знаю, о чём вы подумали:
+          «Сол, да ты их сам написал!». Может быть. Но факты — вещь упрямая: эти
+          люди сейчас на свободе, а не в камере.
+        </p>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <h3>Чеддер Б.</h3>
+            <p class="client-info">(бывший "предприниматель"), Альбукерке</p>
+            <p class="testimonial-text">
+              "МЕНЯ ПОЙМАЛИ С ПОЛУТОННОЙ. СОЛ СДЕЛАЛ ТАК, ЧТО СУДЬЯ
+              ПЕРЕКЛАССИФИЦИРОВАЛ ЭТО В 'ЛИЧНУЮ КОЛЛЕКЦИЮ ДЛЯ МЕДИТАЦИИ'. ШТРАФ
+              500$."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <h3>Синди В.</h3>
+            <p class="client-info">мать-одиночка (теперь ещё и бизнес-леди)</p>
+            <p class="testimonial-text">
+              "МОЙ БЫВШИЙ СКРЫВАЛ СЧЕТА В ПАНАМЕ. СОЛ НАШЁЛ ИХ ЗА НЕДЕЛЮ. И ЕЩЁ
+              ТРИ, О КОТОРЫХ Я НЕ ЗНАЛА."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <h3>Митч "Тормоз" Р.</h3>
+            <p class="client-info">водитель-дальнобойщик</p>
+            <p class="testimonial-text">
+              "Я СБИЛ ПОЛИЦЕЙСКИЙ БЛОКПОСТ. 'СЛУЧАЙНО'. СОЛ НЕ СТАЛ ОТПИРАТЬСЯ —
+              ОН СДЕЛАЛ ИЗ МЕНЯ ЖЕРТВУ 'ДЕФЕКТНЫХ ТОРМОЗОВ'."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <h3>Анонимно</h3>
+            <p class="client-info">(и это тоже часть услуги)</p>
+            <p class="testimonial-text">
+              "ЗНАКОМЫЙ ПОСОВЕТОВАЛ СОЛА, КОГДА У МЕНЯ… ВООБЩЕ, ЛУЧШЕ НЕ
+              УПОМИНАТЬ. ОН РЕШИЛ ВОПРОС ЗА ДВА ДНЯ."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНСУЛЬТАЦИЯ -->
+    <section class="consultation" id="consultation">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fas fa-handshake"></i> Консультация
+        </h2>
+
+        <div class="consultation__content">
+          <!-- Левая часть: Форма -->
+          <div class="consultation-form">
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formspree.io/f/meoylvqd"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Новая заявка с сайта Сола Гудмана!"
+              />
+              <input type="hidden" name="_language" value="ru" />
+
+              <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Ваше имя:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Как к вам обращаться?"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"
+                  ><i class="fas fa-envelope"></i> Ваш email:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="example@mail.com"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="problem"
+                  ><i class="fas fa-exclamation-triangle"></i> В чем
+                  проблема?</label
+                >
+                <select id="problem" name="problem" class="form-select">
+                  <option value="">Выберите тип проблемы</option>
+                  <option value="drugs">Наркотики</option>
+                  <option value="theft">Кражи</option>
+                  <option value="accident">ДТП</option>
+                  <option value="family">Семейные споры</option>
+                  <option value="threats">Угрозы</option>
+                  <option value="taxes">Налоги</option>
+                  <option value="other">Другое</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message"
+                  ><i class="fas fa-comment-dots"></i> Описание проблемы:</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Опишите вашу ситуацию подробно..."
+                  class="form-textarea"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-gavel"></i> ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+              </button>
+
+              <p class="form-note">
+                <i class="fas fa-shield-alt"></i> Конфиденциальность
+                гарантирована. Первая консультация — бесплатно.
+              </p>
+            </form>
+          </div>
+
+          <!-- Правая часть: Контакты -->
+          <div class="consultation-contacts">
+            <div class="contact-item highlight">
+              <div class="contact-icon">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Экстренная линия</h4>
+                <a href="tel:5055034455" class="contact-phone">
+                  <i class="fas fa-phone-alt"></i> (505) 503-4455
+                </a>
+                <p class="contact-note">Звонок бесплатный • 24/7</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Офис в Альбукерке</h4>
+                <p class="contact-address">
+                  Стрип-молл «Mesa Verde»<br />
+                  Кабинет 14 (за салоном ногтей)
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>График работы</h4>
+                <p class="contact-hours">
+                  Пн-Вс: 8:00 - 22:00<br />
+                  <span class="emergency-hours"
+                    >Экстренные случаи: круглосуточно</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer-logo">
+            <img
+              src="assets/images/logo.png"
+              alt="Better Call Saul"
+              class="logo-img"
+            />
+            <span>Saul Goodman & Associates</span>
+          </div>
+
+          <p class="footer-copyright">
+            «Саул Гудман и партнёры. Все права защищены (возможно)»
+          </p>
+
+          <div class="footer-contact">
+            <div class="footer-phone">
+              <a href="tel:5055034455">
+                <i class="fas fa-phone"></i> Better call Saul: 505-503-4455
+              </a>
+            </div>
+            <div class="footer-email">
+              <a href="mailto:saul@bettercallsaul.com">
+                <i class="fas fa-envelope"></i> saul@bettercallsaul.com
+              </a>
+            </div>
+            <div class="footer-address">
+              <i class="fas fa-map-marker-alt"></i> Стрип-молл «Mesa Verde»,
+              Кабинет 14
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Аудио для джингла -->
+    <audio id="saulJingle" preload="auto">
+      <source
+        src="assets/audio/better-call-saul-intro-theme.mp3"
+        type="audio/mpeg"
+      />
+      Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
