@@ -91,7 +91,6 @@ cd saul-goodman-website
 Мобильный (320px+) — Одноколоночный дизайн, бургер-меню
 
 📁 Структура проекта
-text
 saul-goodman-site/
 ├── index.html                 # Главная страница
 ├── styles/                    # Стили
@@ -109,6 +108,7 @@ saul-goodman-site/
 │       └── better-call-saul-intro-theme.mp3
 ├── LICENSE                   # Лицензия MIT
 └── README.md                 # Этот файл
+
 🧪 Тестирование
 Сайт протестирован на:
 
